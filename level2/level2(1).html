@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Portal</title>
+  <style>
+    /* Reset CSS */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    /* Header Section */
+    header {
+      background-color: #007BFF;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    /* Navigation Menu */
+    nav {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 18px;
+    }
+
+    /* Main Body */
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+
+    /* Search Panel */
+    .search-panel {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    .search-panel input[type="text"] {
+      width: calc(100% - 40px);
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .search-panel button {
+      width: 100%;
+      padding: 10px;
+      background-color: #007BFF;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .search-panel button:hover {
+      background-color: #0056B3;
+    }
+
+    /* Skill Section */
+    .skill-section {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    .skill-section h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .skill-section ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .skill-section li {
+      margin-bottom: 5px;
+    }
+
+    .skill-section a {
+      text-decoration: none;
+      color: #333;
+      font-size: 16px;
+      display: block;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .skill-section a:hover {
+      background-color: #f0f0f0;
+    }
+
+    /* Recent Job Section */
+    .recent-job-section {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    .recent-job-section h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .recent-job {
+      margin-bottom: 15px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 15px;
+    }
+
+    .recent-job h3 {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+
+    .recent-job p {
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    .recent-job a {
+      text-decoration: none;
+      color: #007BFF;
+      font-size: 16px;
+    }
+
+    .recent-job a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Job Portal</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Jobs</a></li>
+        <li><a href="#">Candidates</a></li>
+        <li><a href="#">Employers</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="search-panel">
+      <input type="text" placeholder="Search jobs">
+      <button>Search</button>
+    </div>
+
+    <div class="skill-section">
+      <h2>Skills</h2>
+      <ul>
+        <li><a href="#">Python</a></li>
+        <li><a href="#">JavaScript</a></li>
+        <li><a href="#">PHP</a></li>
+        <li><a href="#">Java</a></li>
+      </ul>
+    </div>
+
+    <div class="recent-job-section">
+      <h2>Recent Jobs</h2>
+      <div class="recent-job">
+        <h3>Software Engineer</h3>
+        <p>Company: ABC Corporation</p>
+        <p>Posted: 2 hours ago</p>
+        <a href="#">View Job</a>
+      </div>
+      <div class="recent-job">
+        <h3>Data Analyst</h3>
+        <p>Company: XYZ Inc.</p>
+        <p>Posted: 10 hours ago</p>
+        <a href="#">View Job</a>
+      </div>
+      <!-- More recent jobs can be added here -->
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Job Portal. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+  </footer>
+</body>
+</html>
