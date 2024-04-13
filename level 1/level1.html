@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Personal Portfolio</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+    }
+    header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+        margin-bottom: 20px;
+    }
+    section {
+        padding: 50px;
+        text-align: center;
+        background-color: #f9f9f9;
+        margin-bottom: 20px;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Satvik Uppala</h1>
+    <p>Web Developer | Designer</p>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>I'm a passionate web developer with experience in HTML, CSS, and JavaScript. I specialize in building responsive and user-friendly websites.</p>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Bootstrap</li>
+    </ul>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+        <h3>Project Title 1: E-commerce Website</h3>
+        <p>An e-commerce website built with HTML, CSS, and JavaScript. It features a clean and modern design, with a responsive layout that adapts to different screen sizes. The website includes a product catalog, shopping cart, and checkout process. Users can create an account, log in, and manage their orders.</p>
+    </div>
+    <div class="project">
+        <h3>Project Title 2: Portfolio Website</h3>
+        <p>A portfolio website built with HTML, CSS, and JavaScript. It features a minimalist design, with a responsive layout that adapts to different screen sizes. The website includes a home page, about page, portfolio page, and contact page. The portfolio page showcases my latest projects, with images, descriptions, and links to live demos.</p>
+    </div>
+</section>
+
+<section id="resume">
+    <h2>Resume</h2>
+    <p><a href="satvik-uppala-resume.pdf" target="_blank">Download Resume</a></p>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: satvik.uppala@gmail.com</p>
+    <p>Phone: 8374599324</p>
+</section>
+
+<footer>
+    &copy; 2024 Satvik Uppala
+</footer>
+
+<script>
+    const smoothScrollLinks = document.querySelectorAll('a[href^="#"]');
+    smoothScrollLinks.forEach(link => {
+        link.addEventListener('click', e => {
+            e.preventDefault();
+            const targetId = link.getAttribute('href').slice(1);
+            const targetElement = document.getElementById(targetId);
+            targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+    });
+</script>
+
+</body>
+</html>
